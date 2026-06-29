@@ -1,6 +1,6 @@
 cask "slashbar" do
   version "0.1.1"
-  sha256 "f1ce48ba5c97bec26d6711d35373bf019299789282e000f1744a3a079a321ba7"
+  sha256 "b85aae17baf3617c4a1875ed7fb2e27bf60b05ba0540981892b02458711c06a6"
 
   url "https://github.com/harun-yardimci/slashbar/releases/download/v#{version}/Slashbar.dmg",
       verified: "github.com/harun-yardimci/slashbar/"
