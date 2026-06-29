@@ -1,0 +1,24 @@
+cask "slashbar" do
+  version "0.1.0"
+  sha256 "da4e7412433e5c255777d1a73fe5fb9c3ad418c6b1a6f70c06153035b3fd97fc"
+
+  url "https://github.com/harun-yardimci/slashbar/releases/download/v#{version}/Slashbar.dmg",
+      verified: "github.com/harun-yardimci/slashbar/"
+  name "Slashbar"
+  desc "Command bar for macOS — press / and run 100+ actions"
+  homepage "https://slashbar.app"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
+  depends_on macos: ">= :sonoma"
+
+  app "Slashbar.app"
+
+  zap trash: [
+    "~/Library/Application Support/Slashbar",
+    "~/Library/Preferences/com.slashbar.app.plist",
+  ]
+end
