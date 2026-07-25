@@ -1,6 +1,6 @@
 cask "slashbar" do
-  version "0.3.8"
-  sha256 "bbad6c67fb9d73104c91d90b4c1ffcd0a3a8e8e54b68549fe68c1c685b58ed63"
+  version "0.3.9"
+  sha256 "6153de47e774d37e8e0fe237ee6763725e5e314f8ff5899ca780913a8b804866"
 
   url "https://github.com/harun-yardimci/slashbar/releases/download/v#{version}/Slashbar.dmg",
       verified: "github.com/harun-yardimci/slashbar/"
@@ -13,6 +13,7 @@ cask "slashbar" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: ">= :sonoma"
 
   app "Slashbar.app"
